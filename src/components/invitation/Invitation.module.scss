@@ -1,0 +1,64 @@
+@use '@assets/scss/variables' as v;
+
+.invitation_container {
+  width: 100%;
+  height: 100%;
+  background-color: v.$BACKGROUND_MAIN;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.invitation_card {
+  width: calc(100% - 40px);
+  height: fit-content;
+  background-color: v.$WHITE;
+  border-radius: 20px;
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    white-space: pre-line;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    width: 50%;
+    background-color: v.$BORDER;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 40px 0;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    &.invitation_card_member {
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 40px;
+        line-height: 1.8;
+      }
+    }
+
+    &.invitation_card_info {
+      font-size: 14px;
+    }
+  }
+}
