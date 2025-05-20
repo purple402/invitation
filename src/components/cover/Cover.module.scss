@@ -24,11 +24,12 @@
 }
 
 .cover_sub_title {
-  position: relative;
   width: 100%;
+  padding: 40px 20px;
+  position: relative;
   background-color: v.$BACKGROUND_MAIN;
   color: v.$WHITE;
-  padding: 40px 20px;
+  font-size: 18px;
 
   &::before {
     content: '';

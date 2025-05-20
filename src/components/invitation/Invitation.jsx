@@ -29,8 +29,13 @@ const Invitation = () => {
 
         <div className={styles.invitation_card_info}>
           <span>2025. 08. 02 오후 12시 30분</span>
-          <span>SY컨벤션웨딩홀</span>
+          <span>SY컨벤션웨딩홀 9층 플레르홀</span>
         </div>
+      </div>
+
+      <div className={styles.invitation_emoji}>
+        <span>❤️</span>
+        <span>🤵🏻‍♂️👰🏻</span>
       </div>
     </div>
   );

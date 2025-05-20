@@ -5,6 +5,7 @@
   height: 100%;
   background-color: v.$BACKGROUND_MAIN;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
@@ -16,11 +17,12 @@
   background-color: v.$WHITE;
   border-radius: 20px;
   padding: 40px 20px;
+  position: relative;
 
   h2 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   p {
@@ -59,6 +61,33 @@
 
     &.invitation_card_info {
       font-size: 14px;
+      line-height: 1.8;
     }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 22px 14px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -22px;
+    left: calc(50% - 14px);
+  }
+}
+
+.invitation_emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  span {
+    font-family: 'TossFace';
+    font-size: 60px;
   }
 }

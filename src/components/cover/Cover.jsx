@@ -8,13 +8,10 @@ const Cover = () => {
       <div className={styles.cover_image}>
         <img src={coverImage} alt="cover" />
       </div>
-      <div className={styles.cover_title}>
-        <h1>The Wedding of</h1>
-        <h1>Sungyeon & Joy</h1>
-      </div>
+
       <div className={styles.cover_sub_title}>
-        <h4>성연&기쁨 결혼식에</h4>
-        <h4>초대합니다</h4>
+        <h4>이성연 - 이기쁨</h4>
+        <h4>결혼합니다</h4>
       </div>
     </div>
   );
