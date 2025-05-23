@@ -1,7 +1,5 @@
 @use './reset';
-@use './variables';
 
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import url('https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
 
 #root {
@@ -13,25 +11,49 @@
 }
 
 @font-face {
-  font-family: 'MonoplexKR-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2')
-    format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBMPlexSansKR-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'LeferiPoint-WhiteObliqueA';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff')
     format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackObliqueA';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.map_marker {
+  display: flex;
+  flex-direction: column;
+
+  .map_marker__title {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .map_marker__icon {
+    font-size: 30px;
+    font-family: 'TossFace';
+  }
+
+  &.main {
+    .map_marker__title {
+      background-color: #f65c77;
+      color: #fff;
+    }
+  }
+
+  &.sub {
+    .map_marker__title {
+      background-color: #40aaff;
+      color: #fff;
+    }
+  }
 }
