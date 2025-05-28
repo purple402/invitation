@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 
+import BaseContainer from '@components/base/BaseContainer';
+import BaseTitle from '@components/base/BaseTitle';
+
 import styles from './Location.module.scss';
 
 import IconKakao from '@assets/images/icons/icon_kakao.png';
@@ -107,8 +110,8 @@ const Location = () => {
   }, []);
 
   return (
-    <div className={styles.location_container}>
-      <h2>Location</h2>
+    <BaseContainer background="sub">
+      <BaseTitle title="Location" />
 
       <div id="map" className={styles.location_map}></div>
 
@@ -145,7 +148,7 @@ const Location = () => {
           </div>
         ))}
       </div>
-    </div>
+    </BaseContainer>
   );
 };
 

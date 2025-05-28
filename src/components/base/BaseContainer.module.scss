@@ -1,0 +1,24 @@
+@use '../../assets/scss/variables' as v;
+
+.base_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  &.main {
+    background-color: v.$BACKGROUND_MAIN;
+    color: v.$WHITE;
+  }
+
+  &.sub {
+    background-color: v.$BACKGROUND_SUB;
+  }
+
+  &.white {
+    background-color: v.$WHITE;
+  }
+}

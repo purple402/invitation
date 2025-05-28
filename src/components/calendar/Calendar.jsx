@@ -1,9 +1,12 @@
+import BaseContainer from '@components/base/BaseContainer';
+import BaseTitle from '@components/base/BaseTitle';
+
 import styles from './Calendar.module.scss';
 
 const Calendar = () => {
   return (
-    <div className={styles.calendar_container}>
-      <h2>Calendar</h2>
+    <BaseContainer>
+      <BaseTitle title="Calendar" />
 
       <div className={styles.calendar}>
         <div className={styles.calendar_header}>
@@ -119,7 +122,7 @@ const Calendar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </BaseContainer>
   );
 };
 

@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 
+import BaseContainer from '@components/base/BaseContainer';
+
 import photo from '@assets/images/cover.jpg';
 import photo02 from '@assets/images/photo02.jpg';
 import sampleImg from '@assets/images/sample.jpg';
@@ -34,8 +36,6 @@ const slides = [
   },
 ];
 
-import styles from './PhotoSlide.module.scss';
-
 import './embla.css';
 
 const PhotoSlide = () => {
@@ -68,7 +68,7 @@ const PhotoSlide = () => {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className={styles.photo_slide_container}>
+    <BaseContainer background="white">
       <div className="embla">
         <div className="embla__viewport" ref={emblaMainRef}>
           <div className="embla__container">
@@ -96,7 +96,7 @@ const PhotoSlide = () => {
           </div>
         </div>
       </div>
-    </div>
+    </BaseContainer>
   );
 };
 

@@ -1,17 +1,4 @@
-@use '@assets/scss/variables' as v;
-
-.location_container {
-  width: 100%;
-  height: 100%;
-  padding: 40px 20px;
-  background-color: v.$BACKGROUND_SUB;
-
-  h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 50px;
-  }
-}
+@use '../../assets/scss/variables' as v;
 
 .location_map {
   width: 100%;
@@ -25,6 +12,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  width: 100%;
 
   button {
     width: 100%;

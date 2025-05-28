@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import BaseContainer from '@components/base/BaseContainer';
+
 import styles from './Accounts.module.scss';
 
 const Accounts = () => {
@@ -48,7 +50,7 @@ const Accounts = () => {
   ];
 
   return (
-    <div className={styles.accounts_container}>
+    <BaseContainer background="sub">
       <div className={`${styles.accounts_card} ${isOpen ? styles.open : ''}`}>
         <div className={styles.accounts_card_header} onClick={() => setIsOpen(!isOpen)}>
           <h3>마음 전하실 곳</h3>
@@ -59,7 +61,7 @@ const Accounts = () => {
         <hr />
         <AccountList type="bride" list={brideAccountList} />
       </div>
-    </div>
+    </BaseContainer>
   );
 };
 

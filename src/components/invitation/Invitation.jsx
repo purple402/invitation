@@ -1,8 +1,10 @@
+import BaseContainer from '@components/base/BaseContainer';
+
 import styles from './Invitation.module.scss';
 
 const Invitation = () => {
   return (
-    <div className={styles.invitation_container}>
+    <BaseContainer>
       <div className={styles.invitation_card}>
         <h2>Since 2014</h2>
 
@@ -37,7 +39,7 @@ const Invitation = () => {
         <span>❤️</span>
         <span>🤵🏻‍♂️👰🏻</span>
       </div>
-    </div>
+    </BaseContainer>
   );
 };
 
