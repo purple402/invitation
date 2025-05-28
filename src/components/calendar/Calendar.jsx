@@ -5,7 +5,7 @@ const Calendar = () => {
     <div className={styles.calendar_container}>
       <h2>Calendar</h2>
 
-      <div>
+      <div className={styles.calendar}>
         <div className={styles.calendar_header}>
           <h3>2025년 8월</h3>
         </div>
