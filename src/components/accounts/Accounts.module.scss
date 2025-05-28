@@ -1,0 +1,91 @@
+@use '../../assets/scss/variables' as v;
+
+.accounts_container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  background-color: v.$BACKGROUND_SUB;
+}
+
+.accounts_card {
+  width: 100%;
+  padding: 20px;
+  background-color: v.$WHITE;
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  height: 60px;
+
+  .accounts_card_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 18px;
+      transform: rotate(270deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    width: 50%;
+    background-color: v.$BORDER;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 40px 0;
+  }
+
+  &.open {
+    height: 765px;
+    .accounts_card_header {
+      span {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.accounts_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+
+  .accounts_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid v.$BORDER;
+
+    div {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    .copy_icon {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
