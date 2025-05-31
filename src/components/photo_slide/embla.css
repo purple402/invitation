@@ -20,20 +20,30 @@
   min-width: 0;
   padding-left: var(--slide-spacing);
   display: flex;
-  position: relative;
+  align-items: center;
 }
 
 .embla__slide__image {
-  border-radius: 0.5rem;
-  user-select: none;
-  height: auto;
-  margin: auto;
-}
+  position: relative;
+  height: fit-content;
+  width: 100%;
 
-.embla__slide__date {
-  position: absolute;
-  right: 0.5rem;
-  bottom: 0.5rem;
+  img {
+    border-radius: 0.5rem;
+    user-select: none;
+    height: auto;
+    margin: auto;
+    max-height: 538px;
+  }
+
+  span {
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+    font-family: 'Pretendard-Regular', 'LeferiPoint-WhiteObliqueA';
+    color: white;
+    text-shadow: 0 0 3px gray;
+  }
 }
 
 .embla-thumbs {

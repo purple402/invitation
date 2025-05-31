@@ -32,6 +32,14 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: normal, bold;
+  font-style: normal;
+}
+
 // 네이버 지도 marker
 .map_marker {
   display: flex;
