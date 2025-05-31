@@ -1,21 +1,18 @@
-import Cover from './components/cover/Cover';
-import Invitation from './components/invitation/Invitation';
-import Calendar from './components/calendar/Calendar';
-import PhotoSlide from './components/photo_slide/PhotoSlide';
-import Location from './components/location/Location';
-import Accounts from './components/accounts/Accounts';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import MainPage from './pages/MainPage';
+
+const BASE_APP_URL = import.meta.env.VITE_BASE_APP_URL;
+
+const router = createBrowserRouter([
+  {
+    index: true,
+    element: <MainPage />,
+  },
+]);
 
 const App = () => {
-  return (
-    <div className="main-container">
-      <Cover />
-      <Invitation />
-      <Calendar />
-      <PhotoSlide />
-      <Accounts />
-      <Location />
-    </div>
-  );
+  return <RouterProvider basename={BASE_APP_URL} router={router}></RouterProvider>;
 };
 
 export default App;
