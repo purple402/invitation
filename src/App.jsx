@@ -2,14 +2,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
 
-const BASE_APP_URL = import.meta.env.VITE_BASE_APP_URL;
+const BASE_URL = import.meta.env.PUBLIC_URL;
 
 const router = createBrowserRouter([
   {
-    path: '/invitation',
+    path: '/',
     element: <MainPage />,
   },
-  { basename: BASE_APP_URL },
+  { basename: BASE_URL },
 ]);
 
 const App = () => {
