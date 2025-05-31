@@ -140,10 +140,10 @@ const Location = () => {
 
         {/* 오는 길 */}
         {LOCATION_INFO.directions.map((item) => (
-          <div className={styles.location_card__content}>
+          <div className={styles.location_card__content} key={`loc_${item.type}`}>
             <h4>{DIRECTION_TYPE[item.type]}</h4>
-            {item.description.map((desc) => (
-              <p>{desc}</p>
+            {item.description.map((desc, index) => (
+              <p key={`loc_${item.type}_${index}`}>{desc}</p>
             ))}
           </div>
         ))}
