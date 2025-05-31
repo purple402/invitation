@@ -6,7 +6,7 @@ const BASE_URL = import.meta.env.PUBLIC_URL;
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/invitation',
     element: <MainPage />,
   },
   { basename: BASE_URL },
