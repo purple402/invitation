@@ -6,13 +6,14 @@ const BASE_APP_URL = import.meta.env.VITE_BASE_APP_URL;
 
 const router = createBrowserRouter([
   {
-    path: '/0802',
+    path: '/',
     element: <MainPage />,
   },
+  { basename: BASE_APP_URL },
 ]);
 
 const App = () => {
-  return <RouterProvider basename={BASE_APP_URL} router={router} />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
