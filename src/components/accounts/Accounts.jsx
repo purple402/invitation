@@ -12,20 +12,20 @@ const Accounts = () => {
       order: 0,
       title: '신랑',
       name: '이성연',
-      account: '카카오 3333-33-3333333',
+      account: '카카오뱅크 3333-02-0504858',
     },
-    {
-      order: 1,
-      title: '신랑부',
-      name: '이용렬',
-      account: '카카오 3333-33-3333333',
-    },
-    {
-      order: 2,
-      title: '신랑모',
-      name: '서순옥',
-      account: '카카오 3333-33-3333333',
-    },
+    // {
+    //   order: 1,
+    //   title: '신랑부',
+    //   name: '이용렬',
+    //   account: '카카오 3333-33-3333333',
+    // },
+    // {
+    //   order: 2,
+    //   title: '신랑모',
+    //   name: '서순옥',
+    //   account: '카카오 3333-33-3333333',
+    // },
   ];
 
   const brideAccountList = [
@@ -35,18 +35,18 @@ const Accounts = () => {
       name: '이기쁨',
       account: '카카오뱅크 3333-06-2023685',
     },
-    {
-      order: 1,
-      title: '신부부',
-      name: '이관기',
-      account: '카카오 3333-33-3333333',
-    },
-    {
-      order: 2,
-      title: '신부모',
-      name: '장은숙',
-      account: '카카오 3333-33-3333333',
-    },
+    // {
+    //   order: 1,
+    //   title: '신부부',
+    //   name: '이관기',
+    //   account: '카카오 3333-33-3333333',
+    // },
+    // {
+    //   order: 2,
+    //   title: '신부모',
+    //   name: '장은숙',
+    //   account: '카카오 3333-33-3333333',
+    // },
   ];
 
   return (

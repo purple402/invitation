@@ -41,7 +41,9 @@
   }
 
   &.open {
-    height: 765px;
+    // height: 765px;
+    height: 420px;
+
     .accounts_card_header {
       span {
         transform: rotate(90deg);
