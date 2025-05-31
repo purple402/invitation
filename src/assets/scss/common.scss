@@ -2,12 +2,18 @@
 
 @import url('https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
 
+body {
+  background: #3082c54d;
+}
+
 #root {
   width: min(400px, 100vw);
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #000;
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 @font-face {
@@ -26,6 +32,7 @@
   font-style: normal;
 }
 
+// 네이버 지도 marker
 .map_marker {
   display: flex;
   flex-direction: column;
