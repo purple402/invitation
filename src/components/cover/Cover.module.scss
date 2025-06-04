@@ -49,6 +49,15 @@
   }
 }
 
+@keyframes moveUpDown {
+  from {
+    top: -14px;
+  }
+  to {
+    top: -8px;
+  }
+}
+
 .cover_sub_title {
   width: 100%;
   padding: 40px 20px;
@@ -57,10 +66,18 @@
   color: v.$WHITE;
   font-size: 16px;
 
+  span {
+    transform: rotate(-90deg);
+    font-size: 14px;
+    margin-top: 6px;
+    position: relative;
+    animation: moveUpDown 1.5s ease-in-out infinite alternate;
+  }
+
   &::before {
     content: '';
     position: absolute;
-    bottom: 116px;
+    bottom: 146px;
     left: 0;
     width: 100%;
     transform: translateY(2px);

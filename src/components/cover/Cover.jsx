@@ -17,6 +17,7 @@ const Cover = () => {
       </div>
 
       <div className={styles.cover_sub_title}>
+        <span className="material-icons">&#xE5E0;</span>
         <h4>이성연 - 이기쁨</h4>
         <h4>결혼합니다</h4>
       </div>

@@ -2,4 +2,10 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 40px;
+  transform: translateY(10px);
+  transition: all ease-in-out 0.5s;
+
+  &.active {
+    transform: translateY(0);
+  }
 }
