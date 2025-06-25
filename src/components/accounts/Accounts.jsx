@@ -14,18 +14,18 @@ const Accounts = () => {
       name: '이성연',
       account: '카카오뱅크 3333-02-0504858',
     },
-    // {
-    //   order: 1,
-    //   title: '신랑부',
-    //   name: '이용렬',
-    //   account: '카카오 3333-33-3333333',
-    // },
-    // {
-    //   order: 2,
-    //   title: '신랑모',
-    //   name: '서순옥',
-    //   account: '카카오 3333-33-3333333',
-    // },
+    {
+      order: 1,
+      title: '신랑부',
+      name: '이용렬',
+      account: '농협 352-1789-7200-03',
+    },
+    {
+      order: 2,
+      title: '신랑모',
+      name: '서순옥',
+      account: '기업은행 589-058927-01-011',
+    },
   ];
 
   const brideAccountList = [
