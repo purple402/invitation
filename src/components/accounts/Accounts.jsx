@@ -17,7 +17,7 @@ const Accounts = () => {
     {
       order: 1,
       title: '신랑부',
-      name: '이용렬',
+      name: '이용열',
       account: '농협 352-1789-7200-03',
     },
     {
