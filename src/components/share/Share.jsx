@@ -7,7 +7,7 @@ window.Kakao.init(KAKAO_KEY);
 const Share = () => {
   const sharePage = () => {
     window.Kakao.Share.sendCustom({
-      templateId: 121183,
+      templateId: 122225,
     });
   };
 
