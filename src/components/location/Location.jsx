@@ -31,7 +31,7 @@ const LOCATION_INFO = {
   directions: [
     {
       type: 'SUBWAY',
-      description: ['분당선 영통역 1번 출구에서 도보 4분 거리'],
+      description: ['분당선 영통역 1번 출구에서 도보 6분 거리'],
     },
     {
       type: 'BUS',
