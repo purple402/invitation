@@ -2,12 +2,17 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
 import SharePage from './pages/SharePage';
+import ThanksPage from './pages/ThanksPage';
 
 const BASE_URL = import.meta.env.PUBLIC_URL;
 
 const router = createBrowserRouter([
   {
     path: '/',
+    element: <ThanksPage />,
+  },
+  {
+    path: '/invitation',
     element: <MainPage />,
   },
   {
